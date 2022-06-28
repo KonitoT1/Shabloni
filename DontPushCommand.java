@@ -17,7 +17,7 @@ public class DontPushCommand implements Command{
 
 	@Override
 	public void undo() {
-		this.trainee.getUp();
+		this.trainee.letsGo();
 		
 	}
 
