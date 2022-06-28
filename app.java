@@ -1,4 +1,4 @@
-package fmi;
+file fmi;
 
 public class App {
 
