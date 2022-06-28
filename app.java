@@ -7,8 +7,8 @@ public class App {
 		Trainer trainer = Trainer.getInstance();
 		Trainee trainee = new Trainee();
 		
-		Command LetsGoCommand = new LetsGoCommand(trainee);
-		Command DontPushCommand = new DontPush(trainee);
+		Command LetsGoCommand = new Stani(trainee);
+		Command DontPushCommand = new Legni(trainee);
 		
 		OnlineViewers viewer1 = new OnlineViewers("v1");
 		OnlineViewers viewer2 = new OnlineViewers("v2");
