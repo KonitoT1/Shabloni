@@ -18,10 +18,10 @@ public class App {
 		trainee.subscribe(viewer1);		
 		trainee.subscribe(viewer2);
 		
-		trainer.setCommand(LetsGoCommand);
+		trainer.setCommand(Stani);
 		trainer.coach();
 		
-		trainer.setCommand(DontPushCommand);
+		trainer.setCommand(Legni);
 		trainer.coach();
 	}
 }
