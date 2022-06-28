@@ -3,7 +3,7 @@ package fmi;
 import java.util.List;
 
 public class Trainee implements Observable{
-	private Boolean isntPushing;
+	private Boolean eLegnal;
 	private List<Observer> onlineViewers;
 	
 	public Trainee()
@@ -12,15 +12,15 @@ public class Trainee implements Observable{
 		
 	}
 	
-	public void dontPush() {
-		this.isDown = true;	
-		System.out.println("Trainee isnt pushing");
+	public void legni() {
+		this.eLegnal = true;	
+		System.out.println("Trainee e legnal");
 		this.notify();
 	}
 	
-	public void getUp() {
-		this.isDown = false;	
-		System.out.println("Trainee is up");
+	public void stani() {
+		this.eLegnal = false;	
+		System.out.println("Trainee e stanal");
 		this.notify();
 	}
 
@@ -46,6 +46,6 @@ public class Trainee implements Observable{
 
 	@Override
 	public Boolean getUpdate() {
-		return this.isntPushing;
+		return this.eLegnal;
 	}
 }
